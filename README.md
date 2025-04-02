@@ -1,44 +1,51 @@
-```markdown
 # YOLOv8 PCB 缺陷检测
 
 本项目旨在使用 YOLOv8 目标检测模型检测印刷电路板（PCB）上的缺陷。按照以下步骤准备数据集、训练模型并进行推理和评估。
 
+## 克隆项目
+
+使用以下命令克隆项目到本地：
+```bash
+git clone https://github.com/lireno/yolov8-pcb-detection
+```
+
 ## 项目结构
 
 ```
-yolov8-pcb-detection/
-├── data/
-│   └── PCB/
-│       ├── images/
-│       │   ├── train/
-│       │   └── val/
-│       └── labels/
-│           ├── train/
-│           └── val/
-├── runs/
-│   ├── detect/
-│   │   ├── predictions/
-│   │   └── val/
-│   ├── train/
-│   │   └── weights/
-│   ├── train2/
-│   │   └── weights/
-│   └── train3/
-│       └── weights/
-├── scripts/
-│   └── convert_voc_to_yolo.py
-├── VOC2007/
-│   ├── Annotations/
-│   └── JPEGImages/
-├── .gitignore
-├── evaluate.py
-├── infer_single.py
-├── predict.py
-├── README.md
-├── requirements.txt
-├── train.py
-├── yolo11n.pt
-└── yolov8n.pt```
+yolov8-pcb-detection/ 
+├── data/ 
+│   └── PCB/ 
+│       ├── images/ 
+│       │   ├── train/ 
+│       │   └── val/ 
+│       └── labels/ 
+│           ├── train/ 
+│           └── val/ 
+├── runs/ 
+│   ├── detect/ 
+│   │   ├── predictions/ 
+│   │   └── val/ 
+│   ├── train/ 
+│   │   └── weights/ 
+│   ├── train2/ 
+│   │   └── weights/ 
+│   └── train3/ 
+│       └── weights/ 
+├── scripts/ 
+│   └── convert_voc_to_yolo.py 
+├── VOC2007/ [将你下载的 VOC 数据集放在这里]
+│   ├── Annotations/ 
+│   └── JPEGImages/ 
+├── .gitignore 
+├── evaluate.py 
+├── infer_single.py 
+├── predict.py 
+├── README.md 
+├── requirements.txt 
+├── train.py 
+├── yolo11n.pt 
+└── yolov8n.pt
+```
 
 ## 前置条件
 
