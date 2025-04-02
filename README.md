@@ -15,12 +15,13 @@ git clone https://github.com/lireno/yolov8-pcb-detection
 yolov8-pcb-detection/ 
 ├── data/ 
 │   └── PCB/ 
-│       ├── images/ 
-│       │   ├── train/ 
-│       │   └── val/ 
-│       └── labels/ 
-│           ├── train/ 
-│           └── val/ 
+│   │   ├── images/ 
+│   │   │   ├── train/ 
+│   │   │   └── val/ 
+│   │   └── labels/ 
+│   │       ├── train/ 
+│   │       └── val/ 
+│   └── PCB.yaml[你需要修改这里的路径信息]
 ├── runs/ 
 │   ├── detect/ 
 │   │   ├── predictions/ 
@@ -56,9 +57,9 @@ yolov8-pcb-detection/
 
 2. 下载 VOC 数据集并将其放置在 `VOC2007` 文件夹中。
 
-3. 更新 `PCB.yaml` 文件，将数据集路径设置为绝对路径：
+3. 更新 `data\PCB.yaml` 文件，将数据集路径设置为绝对路径：
    ```yaml
-   path: D:\yolov8-pcb-detection\data\PCB  # 数据集的绝对路径
+   path: D:\yolov8-pcb-detection\data\PCB  # 你电脑上数据集的绝对路径
    ```
    **注意：** 确保路径中不包含中文字符，否则可能会导致错误。
 
