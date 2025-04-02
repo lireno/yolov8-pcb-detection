@@ -1,0 +1,28 @@
+# Virtual environment
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Dataset and output directories
+data/PCB/
+runs/
+
+# Model weights
+*.pt
+*.onnx
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+VOC2007/

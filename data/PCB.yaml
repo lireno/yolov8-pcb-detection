@@ -1,0 +1,12 @@
+path: D:\yolov8-pcb-detection\data\PCB  # absolute dataset root dir
+train: images/train  # train images (relative to 'path')
+val: images/val  # validation images (relative to 'path')
+
+# Classes
+names:
+  0: missing_hole
+  1: mouse_bite
+  2: open_circuit
+  3: short
+  4: spur
+  5: spurious_copper
